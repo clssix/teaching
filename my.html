@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching</title>
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+    <link rel="stylesheet/less" href="./assets/css/my.less" />
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="portrait">
+                <img class="img-responsive" src="./assets/images/portrait.png" />
+            </div>
+            <div class="username">
+                <a href="javascript:void(0)">小包子</a>
+            </div>
+            <div class="message">
+                <a href="javascript:void(0)" class="glyphicon glyphicon-envelope"></a>
+            </div>
+        </div>
+        <div class="more">
+            <a href="javascript:void(0)" class="item">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <p>订单管理</p>
+            </a>
+            <a href="javascript:void(0)" class="item">
+                <span class="glyphicon glyphicon-download-alt"></span>
+                <p>下载管理</p>
+            </a>
+            <a href="javascript:void(0)" class="item">
+                <span class="glyphicon glyphicon-heart-empty"></span>
+                <p>我的收藏</p>
+            </a>
+        </div>
+    </header>
+
+    <!-- lately -->
+    <div class="lately">
+        <div class="container">
+            <div class="title">
+                <div class="look">最近看过</div>
+                <a href="javascript:void(0)" class="glyphicon glyphicon-menu-right"></a>
+            </div>
+
+            <div class="drag-box">
+                <div class="drag-x">
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/image.png" />
+                        </div>
+                        <div class="info">Adobe Photoshop，简称“PS”，是由Ado...</div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/image.png" />
+                        </div>
+                        <div class="info">Adobe Photoshop，简称“PS”，是由Ado...</div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/image.png" />
+                        </div>
+                        <div class="info">Adobe Photoshop，简称“PS”，是由Ado...</div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/image.png" />
+                        </div>
+                        <div class="info">Adobe Photoshop，简称“PS”，是由Ado...</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- more -->
+    <div class="more">
+        <div class="container">
+            <ul>
+                <li class="item">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        <span class="info">我的发布</span>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-send"></span>
+                        <span class="info">我的关注</span>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-picture"></span>
+                        <span class="info">相册</span>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="info">收藏/保存</span>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="./setup.html">
+                        <span class="glyphicon glyphicon-cog"></span>
+                        <span class="info">设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="menu active">
+                <p class="glyphicon glyphicon-home"></p>
+                <p>首页</p>
+            </a>
+
+            <a href="./classify.html" class="menu">
+                <p class="glyphicon glyphicon-th-large"></p>
+                <p>分类</p>
+            </a>
+
+            <a href="./course.html" class="menu">
+                <p class="glyphicon glyphicon-book"></p>
+                <p>课程</p>
+            </a>
+
+            <a href="./my.html" class="menu">
+                <p class="glyphicon glyphicon-user"></p>
+                <p>我的</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./assets/js/less.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<!-- 移动端块元素的拖拽事件插件 -->
+<script src="./assets/js/jquery.dragscroll.js"></script>
+
+<script>
+    //view-source:https://www.jq22.com/demo/jquerydragscroll201908122355/
+    //拖拽事件
+    // 水平方向
+    $('.drag-x').dragscroll({
+        direction: 'scrollLeft'
+    });
+</script>

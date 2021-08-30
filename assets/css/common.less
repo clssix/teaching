@@ -1,0 +1,103 @@
+// headers
+.headers{
+    .container{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        font-size: 1.8em;
+        font-family: ChuangcuHei;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @media screen and (max-width:340px){
+        &{
+            .container{
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+// footer
+.footer{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .menu{
+            display: inline-block;
+            width: 20%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 1em;
+
+            p{
+                font-size: 1.2em;
+                color: #666;
+            }
+            .glyphicon{
+                width: 100%;
+                font-size: 2em;
+            }
+            &:hover{
+                p{
+                    color: #5395e9;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:340px){
+        &{
+            .container{
+                .menu{
+                    p{
+                        font-size: 1.1em;
+                    }
+                    .glyphicon{
+                        font-size: 1.6em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// small-head
+.small-head{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .glyphicon{
+            width: 40%;
+            text-align: left;
+            font-size: 1.4em;
+            color: #000;
+            padding: 0.8em 0em .5em;
+        }
+
+        .title{
+            width: 55%;
+            text-align: left;
+            font-size: 1.6em;
+            color: #000;
+            font-weight: bold;
+            font-family: ChuangcuHei;
+            padding: 0.5em 0em;
+        }
+    }
+}

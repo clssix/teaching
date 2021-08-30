@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching</title>
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+    <link rel="stylesheet/less" href="./assets/css/setup.less" />
+    <style>
+        .btn_fath{  
+            position: relative; 
+            border-radius: 20px; 
+        } 
+        .btn1{ 
+            float: left; 
+        } 
+        .btn2{ 
+            float: right; 
+        } 
+        .btnSwitch{ 
+            height: 20px; 
+            width: 30px; 
+            border:none; 
+            color: #fff; 
+            line-height: 20px; 
+            font-size: 10px; 
+            text-align: center; 
+            z-index: 1; 
+        } 
+        .move{ 
+            z-index: 100; 
+            width: 30px; 
+            border-radius: 20px; 
+            height: 30px; 
+            position: absolute; 
+            cursor: pointer; 
+            border: 1px solid #828282; 
+            background-color: rgb(247, 247, 247);
+        } 
+        .on .move{ 
+            left: 30px; 
+        } 
+        .on.btn_fath{ 
+            background-color: #fae24d; 
+        } 
+        .off.btn_fath{ 
+            background-color: #ebebeb; 
+        }
+    </style>
+</head>
+<body>
+    <!-- small-head -->
+    <header class="small-head">
+        <div class="container">
+            <a href="./my.html" class="glyphicon glyphicon-menu-left"></a>
+            <p class="title">设置</p>
+        </div>
+    </header>
+
+    <!-- power -->
+    <div class="power">
+        <div class="container">
+            <ul>
+                <li class="item">
+                    <div class="info">仅Wi-Fi观看</div>
+                    <div class="btn_fath clearfix on" onclick="toogle(this)"> 
+                        <div class="move" data-state="on"></div> 
+                        <div class="btnSwitch btn1"></div> 
+                        <div class="btnSwitch btn2 "></div> 
+                    </div>
+                </li>
+
+                <li class="item">
+                    <div class="info">仅Wi-Fi下载</div>
+                    <div class="btn_fath clearfix on" onclick="toogle(this)"> 
+                        <div class="move" data-state="on"></div> 
+                        <div class="btnSwitch btn1"></div> 
+                        <div class="btnSwitch btn2 "></div> 
+                    </div>
+                </li>
+
+                <li class="item">
+                    <div class="info">开启后台播放</div>
+                    <div class="btn_fath clearfix on" onclick="toogle(this)"> 
+                        <div class="move" data-state="off"></div> 
+                        <div class="btnSwitch btn1"></div> 
+                        <div class="btnSwitch btn2 "></div> 
+                    </div>
+                </li>
+
+                <li class="item">
+                    <a href="javascript:void(0)" class="info">下载清晰度</a>
+                </li>
+                <li class="item">
+                    <a href="javascript:void(0)" class="info">Siri捷径设置</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- cache -->
+    <div class="cache">
+        <div class="container">
+            <a class="clear" href="javascript:void(0)">清除缓存</a>
+            <p class="space">632MB</p>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <ul>
+                <li class="item"><a href="javascript:void(0)">关于</a></li>
+
+                <li class="item"><a href="javascript:void(0)">上传日志</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- quit -->
+    <div class="quit">
+        <div class="container">
+            <a href="javascript:void(0)">退出登录</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./assets/js/less.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.repeat.js"></script>
+
+<!-- 移动端块元素的拖拽事件插件 -->
+<script src="./assets/js/jquery.dragscroll.js"></script>
+
+<script>
+    function toogle(th){ 
+        var ele = $(th).children(".move");
+
+        if(ele.attr("data-state") == "on"){ 
+
+            ele.animate({left: "0"}, 300, function(){ 
+                ele.attr("data-state", "off");
+            }); 
+
+            $(th).removeClass("on").addClass("off");
+
+        }else if(ele.attr("data-state") == "off"){ 
+
+            ele.animate({left: '30px'}, 300, function(){ 
+                
+                $(this).attr("data-state", "on");
+            }); 
+
+            $(th).removeClass("off").addClass("on"); 
+        } 
+    } 
+</script>

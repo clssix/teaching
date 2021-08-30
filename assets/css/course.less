@@ -1,0 +1,131 @@
+// option
+.option{
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 1em;
+    display: inline-block;
+
+    #tabs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .nav{
+            width: 30%;
+            font-size: 1.2em;
+            font-family: LingyueHeiti;
+            line-height: 3em;
+            text-align: center;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .active{
+            color: #5395e9;
+            border-bottom: 2px solid #5395e9;
+        }
+    }
+
+    #content{
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 1em;
+
+        .block{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+
+            .list{
+                width: 100%;
+
+                .item{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1em;
+
+                    .back{
+                        width: 50%;
+
+                        img{
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .info{
+                        width: 50%;
+                        margin-left: .5em;
+
+                        .small-title{
+                            font-family: LingyueHeiti;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            text-align: left;
+                            line-height: normal;
+                            a{
+                                color: #000;
+                            }
+                        }
+
+                        p{
+                            font-family: ChangzhongHei;
+                            font-size: 1em;
+                            text-align: left;
+                            color: #656565;
+                        }
+
+                        button{
+                            border: none;
+                            background: #ed723a;
+                            border-radius: 5px;
+                            color: #fff;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 5em;
+                    }
+                }
+            }
+        }
+
+        .active{
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width:340px){
+        &{
+            #tabs{
+                .nav{
+                    font-size: 1.1em;
+                }
+            }
+            #content{
+                .block{
+                    .list{
+                        .item{
+                            .info{
+                                .small-title{
+                                    a{
+                                        line-height: 1em;
+                                    }
+                                }
+                                p{
+                                    font-size: .9em;
+                                }
+                                button{
+                                    font-size: .9em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

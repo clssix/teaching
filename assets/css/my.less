@@ -1,0 +1,177 @@
+body{
+    background: #ebebeb;
+}
+
+// header
+.header{
+    width: 100%;
+    background: #fff;
+    margin-bottom: .5em;
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 1em .5em 2em 1em;
+
+        .portrait{
+            width: 25%;
+            border-radius: 100px;
+            img{
+                width: 100%;
+                border-radius: 100px;
+            }
+        }
+
+        .username{
+            width: 68%;
+            padding-top: 2.5em;
+            padding-left: 1.5em;
+            a{
+                font-size: 1.4em;
+                font-family: ChuangcuHei;
+                font-weight: bold;
+                color: #000;
+            }
+        }
+
+        .message{
+            width: 10%;
+            a{
+                display: inline-block;
+                width: 100%;
+                padding-top: 1.8em;
+                font-size: 1.4em;
+                color: #000;
+            }
+        }
+    }
+
+    .more{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .item{
+            width: 31%;
+            text-align: center;
+            padding-top: 1em;
+            span{
+                display: inline-block;
+                color: #5395e9;
+                font-size: 2em;
+            }
+            p{
+                color: #000;
+                font-size: 1.2em;
+                font-family: ChangzhongHei;
+            }
+        }
+    }
+}
+
+// lately
+.lately{
+    width: 100%;
+    background: #fff;
+    margin-bottom: .5em;
+
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1.5em;
+            padding-bottom: 1em;
+
+            .look{
+                text-align: left;
+                font-size: 1.4em;
+                font-weight: bold;
+                font-family: ChuangcuHei;
+                line-height: 1.4em;
+            }
+            .glyphicon{
+                text-align: right;
+                color: #000;
+                font-size: 1.2em;
+                line-height: 1.4em;
+            }
+        }
+
+        .drag-box{
+            width: auto;
+            overflow-x: hidden;
+            padding-bottom: 1em;
+
+            .drag-x{
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                white-space: nowrap;
+
+                .item{
+                    width: 45%;
+                    display: inline-block;
+                    margin-left: 1.5em;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    .back{
+                        width: 100%;
+                        border-radius: 5px;
+                        img{
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+                    .info{
+                        font-size: 1em;
+                        font-family: ChangzhongHei;
+                        white-space: nowrap;
+                        overflow-x: hidden;
+                        text-overflow: ellipsis;
+                        color: #000;
+                        line-height: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// more
+.more{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 6em;
+
+    .container{
+        padding: 0;
+        .item{
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+            padding: 1em 1em;
+            a{
+                width: 100%;
+                .glyphicon{
+                    color: #5395e9;
+                    font-size: 1.2em;
+                    margin-right: .5em;
+                }
+                
+                .info{
+                    color: #000;
+                    font-size: 1.4em;
+                    font-family: ChuangcuHei;
+                }
+            }
+        }
+    }
+}
